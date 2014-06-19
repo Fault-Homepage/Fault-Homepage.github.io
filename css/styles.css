@@ -1,0 +1,338 @@
+/* CSS Reset */
+body,h1,h2,h3,p,ul,ol,li{
+	padding: 0;
+	margin: 0;
+}
+#container{
+	width: 1000px;
+	background-color: #724A37;
+	position: relative;
+	max-height: 2000px;
+	background: url("../images/back");
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	background-color: #D32C2C;
+	min-height: 100px;
+	margin: 0 2% 2%;
+	position: relative;
+	z-index: 2;
+}
+#maincontent{
+	overflow: hidden;
+	width: 100%;
+	min-height: 400px;
+	background-color: #8C4B4B;
+	margin: 0 2% 2%;
+	position: relative;
+	z-index: 1;
+}
+footer{
+	width: 1000px;
+	margin: 0 20px;
+	min-height: 55px;
+	background-color: #D32C2C;
+	clear: both;
+}
+#title{
+	font-size: 30px;
+	margin: 10px;
+	text-align: center;
+}
+#mainimage{
+	margin: 0 250px;
+}
+#contentimage{
+	float: left;
+	margin: 5px;
+	border-radius: 5px;
+}
+#backTo{
+	margin: 10px;
+}
+#title{
+	color: #724A37;
+}
+/*Slideshow*/
+.cycle-slideshow{
+	width: 500px;
+	margin: 30px 250px 0;
+	border-radius: 10px;
+}
+.slideshow-center{
+	text-align: center;
+	color: #543729;
+}
+.cycle-pager{
+	text-align: center;
+	color: #543729;
+	font-size: 30px;
+}
+.cycle-pager:hover{
+	cursor: default;
+}
+.cycle-pager-active{
+	color: #D32C2C;
+}
+#next{
+	color: #543729;
+	margin: 0 5px;
+}
+#prev{
+	color: #543729;
+	margin: 0 5px;
+}
+/* Top Level Nav */
+nav{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 5px;
+	width: 100%;
+}
+nav ul li{
+	list-style: none;
+	position: relative;
+	width: 16.15%;
+	display: inline-block;
+	text-align: center;
+}
+nav ul li a{
+	background-color: #724A37;
+	display: inline-block;
+	color: #D32C2C;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+	border-radius: 10px;
+}
+nav ul li a:hover{
+	background-color: #D32C2C;
+	color: #724A37;
+}
+/* Sub Level Nav*/
+nav ul li ul{
+	position: absolute;
+	top: 40px;
+	left: -9999px;
+	background-color: none;
+	height: 310%;
+}
+
+nav ul li:hover ul{
+	left: -5px;
+	animation: fadeIn 0.25s;
+	-webkit-animation: fadeIn 0.25s;
+}
+
+nav ul li ul li{
+	float: none;
+	width: 154.5px;
+	left: -5px;
+	margin: 0 5px;
+}
+
+nav ul li ul li a{
+	width: 155.5px;
+	display: inline-block;
+	border: none;
+	padding: 5px 0;
+	margin: 0 5px;
+}
+/* Animation */
+@keyFrames fadeIn{
+	from{
+		opacity: 0
+	}
+	to{
+		opacity: 1
+	}
+}
+@-webkit-keyFrames fadeIn{
+	from{
+		opacity: 0
+	}
+	to{
+		opacity: 1
+	}
+}
+/* Email Contact Styles */
+#emailn{
+	text-align: center;
+	margin: 0 auto;
+	font: message-box;
+}
+#emailnl{
+
+}
+#emaila{
+	text-align: center;
+	margin: 0 auto;
+	width: 25%;
+	font: message-box;
+}
+#emailal{
+
+}
+#emails{
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	font: message-box;
+}
+#emailsl{
+
+}
+#emailt{
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	height: 200px;
+	font: message-box;
+}
+#emailtl{
+
+}
+#emailsubmit{
+	text-align: center;
+	margin: 0 auto;
+}
+#maincontent form{
+	width: 100%;
+	text-align: center;
+}
+#message{
+	color: #00FF15;
+	
+}
+/* Moving Sprite Animation */
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -132px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -132px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -132px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -132px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -132px; }
+}
+
+.USGuard1{
+	margin: 5px;
+    width: 33px;
+    height: 66px;
+    background-image: url("https://farm4.staticflickr.com/3917/14452383182_73bc127c1c_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.USGuard1:hover{
+	margin: 5px;
+    width: 33px;
+    height: 66px;
+    background-image: url("https://farm3.staticflickr.com/2924/14450568651_8a89b55787_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.USGuard2{
+	margin: 5px;
+    width: 33px;
+    height: 66px;
+    background-image: url("https://farm4.staticflickr.com/3836/14267454537_1bcab41be0_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.USGuard3{
+	margin: 5px;
+    width: 33px;
+    height: 66px;
+    background-image: url("https://farm4.staticflickr.com/3901/14454401954_f848fa817a_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.TRiley{
+	margin: 5px;
+	width: 33px;
+    height: 66px;
+    background-image: url("https://farm4.staticflickr.com/3850/14267567580_1bdf086e62_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.SFreeman{
+	margin: 5px;
+	width: 33px;
+    height: 66px;
+    background-image: url("https://farm6.staticflickr.com/5478/14454186354_009a1e66b9_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.PReed{
+	margin: 5px;
+	width: 33px;
+    height: 66px;
+    background-image: url("https://farm6.staticflickr.com/5499/14268957267_36e9680687_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
+
+.GidChar{
+	margin: 5px;
+	width: 33px;
+    height: 66px;
+    background-image: url("https://farm3.staticflickr.com/2927/14452094681_52fe498a88_m.jpg");
+    
+    -webkit-animation: play 2s steps(4) infinite;
+       -moz-animation: play 2s steps(4) infinite;
+        -ms-animation: play 2s steps(4) infinite;
+         -o-animation: play 2s steps(4) infinite;
+            animation: play 2s steps(4) infinite;
+}
